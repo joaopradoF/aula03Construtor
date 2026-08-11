@@ -11,9 +11,7 @@ const funcionario = new Funcionario(nome, id, salarioInicial);
 
 console.log(`\nSalario atual: ${funcionario.salario}€`);
 
-const percentagem = readlineSync.questionFloat(
-    "Percentagem de aumento: "
-);
+const percentagem = readlineSync.questionFloat("Percentagem de aumento: ");
 
 funcionario.aplicarAumento(percentagem);
 
