@@ -10,10 +10,7 @@ const aluno = new Aluno(nome, matricula);
 
 let nota = readlineSync.questionFloat("Digite a nota final: ");
 
-while (nota < 0 || nota > 20) {
-    console.log("Nota invalida! A nota deve estar entre 0 e 20.");
-    nota = readlineSync.questionFloat("Digite a nota novamente: ");
-}
+nota.nota(valor);
 
 aluno.nota = nota;
 
