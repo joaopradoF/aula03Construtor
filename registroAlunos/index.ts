@@ -10,7 +10,7 @@ const aluno = new Aluno(nome, matricula);
 
 let nota = readlineSync.questionFloat("Digite a nota final: ");
 
-aluno.nota(valor);
+aluno.nota = nota;
 
 console.log("\n=== DADOS DO ALUNO ===");
 console.log(`Nome: ${aluno.nome}`);
